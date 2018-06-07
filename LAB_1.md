@@ -36,9 +36,19 @@
 * Log off and log in again, and use your phone to get a security code
 
 **Creating an IAM Role**
+* Go to your services tab and select "IAM"
+* Inside IAM service, select "users" in order to see existing users or create a new one.
+  * Select "Add user"
+    * Add your user name
+    * Select AWS Access type as "Programmatic Access" 
+    * Add user to "DevOpsAcademy" group. Review and confirm attached policies.
+    * Review user and settings. If everything is ok, create the user. 
+    * Download and save AWS Secret key and Access Key. 
 
-**Adding IAM Policies to your Role
+** Set AWS CLI in your AWS host
 
-**Review your IAM Role**
-
-  
+* Inside your AWS host
+    * type "aws configure" 
+    * Enter AWS Secret key and Access key (previous step) and also the correct region (ca-central-1)
+    * Confirm functionality by showing currently running EC2 instances. Use the following command: "aws ec2 describe-instances"
+        * If policies were attached correctly, you should be able to see all running EC2 instances in your region. 
