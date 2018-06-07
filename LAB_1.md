@@ -45,8 +45,7 @@
     * Review user and settings. If everything is ok, create the user. 
     * Download and save AWS Secret key and Access Key. 
 
-** Set AWS CLI in your AWS host
-
+**Set AWS CLI in your AWS host**
 * Inside your AWS host
     * type "aws configure" 
     * Enter AWS Secret key and Access key (previous step) and also the correct region (ca-central-1)
