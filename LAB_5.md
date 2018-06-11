@@ -10,7 +10,7 @@
 **Launching an RDS MySQL Instance**
 * Go to your AWS Console > RDS Service > Instance > Launch DB Instance
   * Select Engine
-    * Engine: MySQL
+    * Engine: Aurora
     * Edition: MySQL 5.6-compatible
   * Specify DB Details
     * DB Instance Class: db.t2.small
@@ -21,9 +21,9 @@
     * Confirm password: (repeat your password)
   * Configure Advanced settings (Networking & Security):
     * VPC: select your VPC
-    * Subnet group: select private subnet
+    * Subnet group: select default (Create new subnet group)
     * Public accesible: No
-    * VPC Security Group: select your db security group
+    * VPC Security Group: select your db security group and remove default
   * Configure Advanced settings (Database options):
     * DB Cluster Identifier: Academy01 (use your own user)
     * Database name: wordpress
