@@ -84,4 +84,17 @@ mysql> show DATABASES;
 * Click in Take snapshot button
 * Wait until the snapshot is completed
 
+**Update your wordpress site**
+* Do some updates like creating pages or posts
+
 **Restore an RDS Snapshot**
+* Go to your Instance and look for Details and copy the Resource ID, we are going to use it in following steps
+* Go to your DB snapshot and select yours, click on Actions and select restore
+  * DB Instance Identifier: Your DB Resource ID
+  * Check that the rest of the values are the same as your instance
+* Click in Restore DB Instance button
+* Wait for the restored db to be ready
+
+**Update DB Settings in Wordpress**
+* Once your restored db is ready update the db details in wordpress
+* Go to wordpress again and see the changes
