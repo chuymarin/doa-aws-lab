@@ -157,7 +157,7 @@ aws s3 website s3://bucket-name/ --index-document index.html --error-document 40
 * And you will see and Endpoint, that is your website URL
 * Open it and be sure that shows the index.html contents
 * Add /something to the URL, and be sure that shows the 404.html contents
-* Feel free to modify the look of your site, you can find useful docs in reference step!
+* Feel free to modify the look of your site, add more pages, see references below!
 
 **Reference**
 * [AWS S3 CLI Reference](https://docs.aws.amazon.com/cli/latest/reference/s3/)
