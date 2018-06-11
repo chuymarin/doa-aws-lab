@@ -44,16 +44,43 @@ make_bucket: mdc-doa-academy-01
 ```
 * We use bucket names with prefixes to be sure that our bucket is unique across all buckets in S3
 * You can list all the buckets again to verify that your bucket is created
+* Note: from now on, change bucket-name with your own bucket-name
 
 **Uploading Objects to your S3 Bucket**
+* Create myfile.txt file and write your name on it
+* We are going to upload this file to your S3 Bucket
+* Execute the following command to upload your file:
+```
+aws s3 cp myfile.txt s3://bucket-name/myfile.txt
+```
+* And the output will be similar to:
+```
+upload: ./myfile.txt to s3://bucket-name/myfile.txt
+```
 
 **Listing Objects in your S3 Bucket**
+* Now list your S3 Bucket Objects
+* Execute the following command:
+```
+aws s3 ls s3://bucket-name
+ ```
+ * And you will see a list of your current objects
 
 **Enable Versioning in your S3 Bucket**
+* Now go to AWS Console > S3 Service
+* Search your bucket and click on it
+* Go to Properties tab and click in Versioning
+* Select Enable and click Save button
 
 **Uploading New Object Versions to your S3 Bucket**
+* Modify the contents of your file
+* And upload it again 
+* Repeat this step 1 or 2 times more, so we can have more versions
 
 **Listing Object Versions**
+* Go to your S3 bucket in Overview tab
+* You will see that there is a Versions text, select show
+* And you will see multiple versions of your file
 
 **Restoring Object Versions**
 
