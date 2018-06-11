@@ -6,6 +6,9 @@
   * Add a name for your security group (Ex. sg-fernando)
   * Select your VPC (the one created of Lab #2 )
   * Add a rule for port 3306 and source select the id of your instance security group
+  
+**Create new Public Subnets**
+* Create new public subnet in your vpc and select a different availability zone from the default subnet
 
 **Launching an RDS MySQL Instance**
 * Go to your AWS Console > RDS Service > Instance > Launch DB Instance
